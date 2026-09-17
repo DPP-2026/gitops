@@ -24,13 +24,15 @@ grafana:
 
   ingress:
     enabled: true
-    ingressClassName: nginx
+    ingressClassName: alb
     hosts:
       - monitoring.pharma.internal
     paths:
       - /
     annotations:
-      nginx.ingress.kubernetes.io/ssl-redirect: "true"
+      alb.ingress.kubernetes.io/target-type: "ip"
+      alb.ingress.kubernetes.io/backend-protocol: "HTTP"
+      alb.ingress.kubernetes.io/scheme: "internal"
 
   # ── Dashboards: DISABLED — add via Grafana UI manually ──────────────────────
   sidecar:
