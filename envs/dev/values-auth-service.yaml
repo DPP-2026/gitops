@@ -45,7 +45,7 @@ readinessProbe:
 configmap:
   SPRING_PROFILES_ACTIVE: dev
   LOG_LEVEL: DEBUG
-  SERVER_PORT: "8091"
+  SERVER_PORT: "8081"
   TOKEN_EXPIRATION_MS: "86400000"
   MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: "health,info,metrics,prometheus"
 envFrom:
