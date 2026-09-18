@@ -26,6 +26,3 @@ spec:
     - group: "*"
       kind: "*"
 
-  namespaceResourceBlacklist:
-    - group: "autoscaling"
-      kind: "HorizontalPodAutoscaler"
