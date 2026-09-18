@@ -36,7 +36,7 @@ livenessProbe:
   successThreshold: 1
 readinessProbe:
   path: /actuator/health/readiness
-  port: 8081
+  port: 8091
   initialDelaySeconds: 30
   periodSeconds: 10
   timeoutSeconds: 5
